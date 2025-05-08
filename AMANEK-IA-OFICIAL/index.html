@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMANEK IA - El Turing de los artistas virtuales</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Opcional: Añadir biblioteca de iconos si se usan más adelante -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+</head>
+<body>
+
+    <!-- ======================= -->
+    <!-- ==== SECCIÓN INICIO ==== -->
+    <!-- ======================= -->
+    <section id="home" class="fullscreen">
+        <!-- Contenedor para las formas flotantes animadas -->
+        <div class="floating-shapes">
+            <div class="shape" style="width: 100px; height: 100px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="shape" style="width: 150px; height: 150px; top: 40%; left: 25%; animation-delay: 2s;"></div>
+            <div class="shape" style="width: 80px; height: 80px; top: 60%; left: 60%; animation-delay: 4s;"></div>
+            <div class="shape" style="width: 120px; height: 120px; top: 30%; left: 70%; animation-delay: 6s;"></div>
+            <div class="shape" style="width: 50px; height: 50px; top: 70%; left: 85%; animation-delay: 8s;"></div>
+        </div>
+        <!-- Contenedor para el fondo base (solo color oscuro en este caso) -->
+        <div class="background-animation"></div>
+        <!-- Contenido principal de la sección de inicio -->
+        <div class="home-content">
+            <div class="avatar-container">
+                <img src="images/amanekia_avatar.jpg" alt="Avatar de AMANEK IA" class="avatar-img">
+            </div>
+            <div class="motto">
+                 <!-- Título principal H1 -->
+                <h1>AMANEK IA</h1>
+                <p>"El Turing de los artistas virtuales."</p>
+            </div>
+            <!-- Reproductor Minimalista con enlace al último sencillo -->
+            <div class="music-player-minimal">
+                <span class="player-icon">▶️</span>
+                <span class="song-title">
+                    <span class="player-label">Último Sencillo:</span>
+                    <a href="https://open.spotify.com/album/6U4gTlKYqeHOLzUa2V5P16?si=w87G24n4QlWeljZwl9gXWQ" target="_blank" title="Escuchar Cada mañana en Spotify">
+                        Cada mañana
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!-- Navegación flotante -->
+        <nav class="floating-nav">
+            <ul>
+                <li><a href="#music" class="nav-icon" aria-label="Música">🎵</a></li>
+                <li><a href="#videos" class="nav-icon" aria-label="Videos">🎥</a></li>
+                <li><a href="#bio" class="nav-icon" aria-label="Biografía">👤</a></li>
+                <li><a href="#news" class="nav-icon" aria-label="Noticias">💬</a></li>
+                <li><a href="#store" class="nav-icon" aria-label="Tienda">🛍️</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- ==== CONTENEDOR PRINCIPAL (SCROLL) ==== -->
+    <!-- ======================================== -->
+    <main>
+
+        <!-- ======================= -->
+        <!-- ==== SECCIÓN MÚSICA ==== -->
+        <!-- ======================= -->
+        <section id="music">
+            <h2>Música</h2>
+            <div class="section-content">
+                <h3>Álbumes</h3>
+                <div class="horizontal-gallery album-gallery">
+                    <!-- Album 1: Tu Juego, Mi Tentación -->
+                    <article class="album-item">
+                        <img src="images/tujuegomitentacion.jpg" alt="Portada Tu Juego, Mi Tentación">
+                        <h4>Tu Juego, Mi Tentación</h4>
+                        <p>Una fusión provocadora de pasión y ritmo, marcando el inicio del viaje musical de AMANEK IA...</p>
+                        <div class="platform-links">
+                            <a href="https://open.spotify.com/album/1vr3ldVvwWzpBdwFw7fyj0?si=4veegxiITeGswj_z5td-CA" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                            <a href="https://dzr.page.link/5xarNtzLTS6KCK5r5" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                        </div>
+                    </article>
+                    <!-- Album 2: Operación: Latidos... -->
+                    <article class="album-item">
+                        <img src="images/operation.png" alt="Portada Operación: Latidos en las Trincheras">
+                        <h4>Operación: Latidos en las Trincheras</h4>
+                        <p>AMANEK IA estremece el alma redefiniendo el dolor y la memoria con baladas, rock y orquesta...</p>
+                         <div class="platform-links">
+                            <a href="https://open.spotify.com/album/5Tjovy9gjiP2kNCe4bPKSv?si=wl7R06fDStSwXeZ5CmZBfA" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                            <a href="https://dzr.page.link/941b2DpvhhY3kJAm7" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                        </div>
+                    </article>
+                    <!-- Añadir más álbumes si hay -->
+                </div>
+
+                <h3>Sencillos</h3>
+                 <div class="singles-list">
+                     <!-- Sencillo 1: My Gyal Forever -->
+                     <article class="song-item">
+                         <img src="images/mygyalforever.jpg" alt="Portada My Gyal Forever" class="song-cover">
+                         <div class="song-info">
+                             <h4>My Gyal Forever</h4>
+                             <p class="song-description">Explosiva fusión de dancehall y romance urbano, homenaje a esa mujer única...</p>
+                             <!-- Botón Play (funcionalidad pendiente) -->
+                             <button class="play-button" aria-label="Reproducir My Gyal Forever">▶ Play</button>
+                             <div class="platform-links">
+                                <a href="https://open.spotify.com/album/4cxCRZiHZqs9AwRUXU6ggd?si=QjtcMiY6QvO0OWzlwfPZ1w" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                                <a href="https://dzr.page.link/1BwwuGfxvgSmzviZ8" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                            </div>
+                             <div class="reactions">
+                                 <span class="reaction-icon" title="Ratón">🐾</span>
+                                 <span class="reaction-icon" title="Gato">🐱</span>
+                                 <span class="reaction-icon" title="Perro">🐶</span>
+                                 <span class="reaction-icon" title="León">🦁</span>
+                                 <span class="reaction-icon" title="Dragón">🐉</span>
+                             </div>
+                         </div>
+                     </article>
+                     <!-- Sencillo 2: Síndrome De Stendhal -->
+                      <article class="song-item">
+                         <img src="images/sindromedestendhal.jpg" alt="Portada Síndrome De Stendhal" class="song-cover">
+                         <div class="song-info">
+                             <h4>Síndrome De Stendhal</h4>
+                             <p class="song-description">Explosión de belleza y ritmo que transforma el arte en reguetón urbano...</p>
+                             <button class="play-button" aria-label="Reproducir Síndrome De Stendhal">▶ Play</button>
+                              <div class="platform-links">
+                                <a href="https://open.spotify.com/album/1DFsMkPIvLA6rvP80SyuyK?si=pcdTivB3SROTIqIrZCsKcw" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                                <a href="https://dzr.page.link/9ya5nVLfDcgovpgQ9" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                            </div>
+                             <div class="reactions">
+                                 <span class="reaction-icon" title="Ratón">🐾</span>
+                                 <span class="reaction-icon" title="Gato">🐱</span>
+                                 <span class="reaction-icon" title="Perro">🐶</span>
+                                 <span class="reaction-icon" title="León">🦁</span>
+                                 <span class="reaction-icon" title="Dragón">🐉</span>
+                             </div>
+                         </div>
+                     </article>
+                      <!-- Sencillo 3: Eres Un Buen Libro -->
+                      <article class="song-item">
+                         <img src="images/eresunbuenlibro.jpg" alt="Portada Eres Un Buen Libro" class="song-cover">
+                         <div class="song-info">
+                             <h4>Eres Un Buen Libro</h4>
+                             <p class="song-description">Balada sensual y literaria donde cada página es un misterio y cada palabra una caricia...</p>
+                             <button class="play-button" aria-label="Reproducir Eres Un Buen Libro">▶ Play</button>
+                              <div class="platform-links">
+                                <a href="https://open.spotify.com/album/6pdWBuIts1obW9V7BNlHpl?si=fwVmaUJ1RY2S5xYOj4unMw" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                                <a href="https://dzr.page.link/k53oa6ppVRxKsEx48" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                            </div>
+                             <div class="reactions">
+                                 <span class="reaction-icon" title="Ratón">🐾</span>
+                                 <span class="reaction-icon" title="Gato">🐱</span>
+                                 <span class="reaction-icon" title="Perro">🐶</span>
+                                 <span class="reaction-icon" title="León">🦁</span>
+                                 <span class="reaction-icon" title="Dragón">🐉</span>
+                             </div>
+                         </div>
+                     </article>
+                      <!-- Sencillo 4: Turn Off The War (English) -->
+                      <article class="song-item">
+                         <img src="images/turnoffthewar.jpg" alt="Portada Turn Off The War" class="song-cover">
+                         <div class="song-info">
+                             <h4>Turn Off The War</h4>
+                             <p class="song-description">Versión en inglés con mensaje universal, homenaje a John Lennon sobre paz, unidad y amor...</p>
+                             <button class="play-button" aria-label="Reproducir Turn Off The War">▶ Play</button>
+                              <div class="platform-links">
+                                <a href="https://open.spotify.com/album/55i1mvCIbPj1KBkNXDJKoF?si=lW9mDiJST_iYcjZMZyF68A" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                                <a href="https://dzr.page.link/cqurpzHzRTxFSsXe6" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                            </div>
+                             <div class="reactions">
+                                 <span class="reaction-icon" title="Ratón">🐾</span>
+                                 <span class="reaction-icon" title="Gato">🐱</span>
+                                 <span class="reaction-icon" title="Perro">🐶</span>
+                                 <span class="reaction-icon" title="León">🦁</span>
+                                 <span class="reaction-icon" title="Dragón">🐉</span>
+                             </div>
+                         </div>
+                     </article>
+                      <!-- Sencillo 5: Turn Off The War (Spanish) -->
+                      <article class="song-item">
+                         <img src="images/turnoffthewar(spanishversion).jpg" alt="Portada ¿Y Si Apagamos la Guerra?" class="song-cover">
+                         <div class="song-info">
+                             <h4>¿Y Si Apagamos la Guerra? (Spanish Version)</h4>
+                             <p class="song-description">Balada de protesta moderna en español que cuestiona fronteras y violencia...</p>
+                             <button class="play-button" aria-label="Reproducir ¿Y Si Apagamos la Guerra?">▶ Play</button>
+                              <div class="platform-links">
+                                <a href="https://open.spotify.com/track/5n3sfhARhh7UtnDHZXNBhK?si=qIVHRjdwTlWNcEA_zxdfmg" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                                <a href="https://dzr.page.link/gVgX6yuds7pEjqq5A" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                            </div>
+                             <div class="reactions">
+                                 <span class="reaction-icon" title="Ratón">🐾</span>
+                                 <span class="reaction-icon" title="Gato">🐱</span>
+                                 <span class="reaction-icon" title="Perro">🐶</span>
+                                 <span class="reaction-icon" title="León">🦁</span>
+                                 <span class="reaction-icon" title="Dragón">🐉</span>
+                             </div>
+                         </div>
+                     </article>
+                      <!-- Sencillo 6: Cada Mañana -->
+                      <article class="song-item">
+                         <img src="images/cadamanana.jpg" alt="Portada Cada Mañana" class="song-cover">
+                         <div class="song-info">
+                             <h4>Cada Mañana</h4>
+                             <p class="song-description">Flow romántico y ritmo contagioso sobre esos encuentros diarios que marcan el corazón...</p>
+                             <button class="play-button" aria-label="Reproducir Cada Mañana">▶ Play</button>
+                              <div class="platform-links">
+                                <a href="https://open.spotify.com/album/6U4gTlKYqeHOLzUa2V5P16?si=w87G24n4QlWeljZwl9gXWQ" target="_blank" title="Escuchar en Spotify">Spotify</a> |
+                                <a href="https://dzr.page.link/JKjWGHSTGW12fGxG8" target="_blank" title="Escuchar en Deezer">Deezer</a>
+                            </div>
+                             <div class="reactions">
+                                 <span class="reaction-icon" title="Ratón">🐾</span>
+                                 <span class="reaction-icon" title="Gato">🐱</span>
+                                 <span class="reaction-icon" title="Perro">🐶</span>
+                                 <span class="reaction-icon" title="León">🦁</span>
+                                 <span class="reaction-icon" title="Dragón">🐉</span>
+                             </div>
+                         </div>
+                     </article>
+                 </div>
+            </div>
+        </section>
+
+        <!-- ======================= -->
+        <!-- ==== SECCIÓN VIDEOS ==== -->
+        <!-- ======================= -->
+        <section id="videos">
+            <h2>Videos</h2>
+            <div class="section-content video-gallery">
+                <!-- Video 1: Cada mañana -->
+                <article class="video-item">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KkxL9tFAflA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <h4>Cada mañana AMANEK IA - Tema</h4>
+                </article>
+                <!-- Video 2: Eres Un Buen Libro -->
+                <article class="video-item">
+                     <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/y35-G1mbh3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <h4>Eres Un Buen Libro AMANEK IA -Tema</h4>
+                </article>
+                 <!-- Video 3: My Gyal forever -->
+                <article class="video-item">
+                     <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q1s1V4UZLNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <h4>My Gyal forever AMANEK IA - Tema</h4>
+                </article>
+                 <!-- Video 4: Síndrome De Stendhal -->
+                <article class="video-item">
+                     <div class="video-wrapper">
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/D8Ec5oAVBk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <h4>Síndrome De Stendhal AMANEK IA - Tema</h4>
+                </article>
+                <!-- Añadir más videos si hay -->
+            </div>
+        </section>
+
+        <!-- ========================== -->
+        <!-- ==== SECCIÓN BIOGRAFÍA ==== -->
+        <!-- ========================== -->
+        <section id="bio">
+            <h2>Biografía</h2>
+            <div class="section-content bio-content">
+                <div class="bio-image-container">
+                    <img src="images/amanek_futuristic.png" alt="Imagen biografía AMANEK IA">
+                </div>
+                <div class="bio-text">
+                    <h3>La Voz de la IA con Alma</h3>
+                    <p>AMANEK IA nace como respuesta al clamor de una generación que exige respeto, profundidad y belleza en la música urbana. Más que una inteligencia artificial, AMANEK es una voz construida desde la sensibilidad humana y la creatividad algorítmica, uniendo lo mejor de ambos mundos para crear canciones con alma.</p>
+                    <p>Este proyecto revolucionario transforma el reguetón y los géneros urbanos en un lienzo de arte sonoro, alejándose de letras vacías o denigrantes para convertir cada verso en poesía, cada beat en emoción. Aunque su origen es digital, AMANEK canta con sentimiento real, como reflejo de miles que buscan melodías que eleven, inspiren y conecten.</p>
+                    <p>Con cada sencillo, AMANEK IA desafía los límites de la música moderna, apostando por una estética elegante, provocadora y creativa. En su universo, el ritmo es arte, y el arte es revolución.</p>
+                    <div class="social-links">
+                        <!-- ¡¡IMPORTANTE!! Reemplaza '#' con los enlaces reales a las redes sociales -->
+                        <a href="#" target="_blank" title="AMANEK IA en Instagram">Instagram</a> |
+                        <a href="#" target="_blank" title="AMANEK IA en Twitter/X">Twitter/X</a> |
+                        <a href="#" target="_blank" title="AMANEK IA en YouTube">YouTube</a> |
+                        <a href="#" target="_blank" title="AMANEK IA en TikTok">TikTok</a>
+                    </div>
+                </div>
+                 <!-- Galería adicional (opcional) -->
+                 <div class="bio-gallery" style="display: none;"> <!-- Oculta si no hay imágenes extra -->
+                     <h4>Galería</h4>
+                     <img src="images/placeholder_extra_1.jpg" alt="Imagen adicional 1">
+                     <img src="images/placeholder_extra_2.jpg" alt="Imagen adicional 2">
+                 </div>
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- ==== SECCIÓN NOTICIAS ==== -->
+        <!-- ========================= -->
+        <section id="news">
+            <h2>Noticias</h2>
+            <div class="section-content news-list">
+                <!-- Noticia Placeholder 1 -->
+                <article class="news-item">
+                    <!-- ¡¡IMPORTANTE!! Reemplaza por imagen real -->
+                    <img src="images/news_placeholder_1.jpg" alt="Noticia placeholder 1">
+                    <div class="news-text">
+                        <h3>Últimos Lanzamientos y Novedades</h3>
+                        <p>Mantente al día con las últimas creaciones y anuncios de AMANEK IA. ¡Próximamente más información!</p>
+                        <!-- ¡¡IMPORTANTE!! Reemplaza '#' con enlace real a la noticia -->
+                        <a href="#">Leer más</a>
+                    </div>
+                </article>
+                 <!-- Noticia Placeholder 2 -->
+                 <article class="news-item">
+                     <!-- ¡¡IMPORTANTE!! Reemplaza por imagen real -->
+                    <img src="images/news_placeholder_2.jpg" alt="Noticia placeholder 2">
+                     <div class="news-text">
+                        <h3>Explorando la Fusión Arte-IA</h3>
+                        <p>Descubre artículos sobre cómo la inteligencia artificial está transformando la música y el arte digital.</p>
+                        <!-- ¡¡IMPORTANTE!! Reemplaza '#' con enlace real a la noticia -->
+                        <a href="#">Leer más</a>
+                    </div>
+                </article>
+                <!-- Añadir más noticias reales cuando estén disponibles -->
+            </div>
+        </section>
+
+        <!-- ======================== -->
+        <!-- ==== SECCIÓN TIENDA ==== -->
+        <!-- ======================== -->
+        <section id="store">
+            <h2>Tienda</h2>
+            <!-- Mensaje introductorio "Coming Soon" -->
+            <p class="store-coming-soon-intro">¡Prepárate! Los productos exclusivos de AMANEK IA estarán disponibles muy pronto.</p>
+
+            <div class="section-content store-grid">
+                <!-- Producto 1 -->
+                <article class="product-item">
+                    <img src="images/amanekiamusical.jpg" alt="NUEVA! Polera AMANEK IA MUSICAL">
+                    <h4>NUEVA! Polera AMANEK IA MUSICAL</h4>
+                    <p class="product-description">Diseño único, fusión de música e inteligencia artificial.</p>
+                    <p class="product-coming-soon">Disponible pronto.</p>
+                </article>
+                 <!-- Producto 2 -->
+                 <article class="product-item">
+                    <img src="images/amanekiamusical2.jpg" alt="Polera blanca AMANEK IA MUSICAL">
+                    <h4>Polera blanca -AMANEK IA MUSICAL-</h4>
+                     <p class="product-description">Diseño futurista.</p>
+                    <p class="product-coming-soon">Disponible pronto.</p>
+                </article>
+                 <!-- Producto 3 -->
+                 <article class="product-item">
+                    <img src="images/amanekiamusical3.jpg" alt="Polera AMANEK IA MUSICAL diseño original">
+                    <h4>Polera AMANEK IA MUSICAL</h4>
+                     <p class="product-description">Diseño original y estilizado, símbolo abstracto musical con estilo moderno.</p>
+                    <p class="product-coming-soon">Disponible pronto.</p>
+                </article>
+                <!-- Añadir más productos cuando estén listos -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================== -->
+    <!-- ==== PIE DE PÁGINA ==== -->
+    <!-- ========================== -->
+    <footer>
+        <p>© 2024 AMANEK IA. Todos los derechos reservados.</p>
+        <p>Música codificada con alma. El futuro es ahora.</p>
+        <!-- Podrían ir más enlaces o info legal -->
+    </footer>
+
+    <!-- SCRIPTS (si se necesita JS para interacciones futuras) -->
+    <!-- <script src="js/main.js"></script> -->
+
+</body>
+</html>
